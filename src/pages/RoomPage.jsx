@@ -40,7 +40,7 @@ export default function RoomPage() {
                         <h6>Size: {room.size}</h6>
                         <h6>max capacity: {" "} {room.capacity > 1 ? `${room.capacity} people` : `${room.capacity} person`}
                         </h6>
-                        <h6>{roompets ? 'pets allowed ' : 'no pets allowed '}</h6>
+                        <h6>{room.pets ? 'pets allowed ' : 'no pets allowed '}</h6>
                         <h6>{room.breakfast && 'free breakfast included'}</h6>
 
                     </article>
@@ -49,7 +49,7 @@ export default function RoomPage() {
             <section className='room-extras'>
                 <h6>Extras:</h6>
                 <ul className='extras'>
-                    {room && room.extras && room.extras.map((item, index) => (<li key={idex}> - {item}</li>
+                    {room && room.extras && room.extras.map((item, index) => (<li key={index}> - {item}</li>
                     ))};
                 </ul>
             </section>
