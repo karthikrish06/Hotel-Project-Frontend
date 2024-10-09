@@ -40,8 +40,8 @@ Install dependencies for frontend
 project fronent host link: https://hotel-project-frontend.netlify.app
 project backend host link: https://hotel-project-backend-gc56.onrender.com
 
-Username:sathyasai
-password:farmer@123
+Username:sathyasai.
+password:farmer@123.
 
  
 
