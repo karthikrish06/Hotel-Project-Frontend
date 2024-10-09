@@ -7,6 +7,7 @@ export const Signup = () => {
     const navigate = useNavigate();
     const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
+    const [phone, setPhone] = useState("");
     const [password, setPassword] = useState("");
     function signUPUser() {
         let payload = { username, email, password };
@@ -21,6 +22,7 @@ export const Signup = () => {
         <div className='signup-Form'>
             <TextField id="outlined-basic" label="username" variant="outlined" type="text" value={username} onChange={(e) => setUsername(e.target.value)} /> <br />
             <TextField id="outlined-basic" label="email" variant="outlined" type="text" value={email} onChange={(e) => setEmail(e.target.value)} /> <br />
+            <TextField id="outlined-basic" label="phone" variant="outlined" type="number" value={phone} onChange={(e) => setPhone(e.target.value)} /> <br />
             <TextField id="outlined-basic" label="password" variant="outlined" type="password" value={password} onChange={(e) => setPassword(e.target.value)} /> <br />
             <Button variant="contained" onClick={signUPUser}>Register</Button>
             <Typography color='black'> Already Registered <Button onClick={() => navigate("/login")}>Login</Button></Typography>
