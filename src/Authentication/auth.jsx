@@ -18,7 +18,7 @@ async function loginHandler(payload) {
 
 async function signupHandler(payload) {
     const res = await fetch(`${baseurl}/${userurl}/register`, {
-        method: "POST",
+        method: "GET",
         body: JSON.stringify(payload),
         headers: {
             "Content-Type": "application/json",
