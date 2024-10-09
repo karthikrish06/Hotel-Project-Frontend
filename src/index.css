@@ -21,7 +21,7 @@ body {
   color: var(--mainBlack);
   background: var(--mainWhite);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  line-height: 1.4;
+  line-height: 0.5;
 }
 h1 {
   font-size: 3em;

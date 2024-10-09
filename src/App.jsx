@@ -7,6 +7,8 @@ import { Route, Routes,  } from "react-router-dom";
 import Home from './pages/Home'
 import Rooms from './components/Rooms'
 import RoomPage from './pages/RoomPage'
+import { Login } from './pages/Login'
+import { Signup } from './pages/Signup'
 
 function App() {
 
@@ -15,6 +17,8 @@ function App() {
       <Header />
       <Routes>
         <Route exact path="/" Component={Home} />
+        <Route exact path='/login' Component={Login} />
+        <Route exact path='/signup' Component={Signup} />
         <Route exact path='/rooms' Component={Rooms} />
         <Route exact path='/rooms/:id' Component={RoomPage} />
       </Routes>

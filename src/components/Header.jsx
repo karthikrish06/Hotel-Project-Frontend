@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Header() {
-    return(
+    return (
         <nav className='navbar'>
             <div className='nav-center'>
                 <div className='nav-header'>
@@ -14,6 +14,12 @@ export default function Header() {
                     </li>
                     <li>
                         <Link to='/rooms'>Rooms</Link>
+                    </li>
+                    <li className='nav-right'>
+                        <Link to='/login'>Login</Link>
+                    </li>
+                    <li>
+                        <Link to='/signup'>Register</Link>
                     </li>
                 </ul>
             </div>
